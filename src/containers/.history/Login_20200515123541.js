@@ -54,13 +54,13 @@ export default function Login() {
             onChange={handleFieldChange}
           />
         </FormGroup>
-        <Link to="/login/reset">Forgot password?</Link>
         <LoaderButton
           block
           type="submit"
           bsSize="large"
           isLoading={isLoading}
           disabled={!validateForm()}
+          <Link to="/login/reset">Forgot password?</Link>
         >
           Login
         </LoaderButton>
